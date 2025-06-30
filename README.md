@@ -11,6 +11,8 @@
 
 Click the Live Demo tab above for a visual tour of the dashboard!
 
+*For full details, see the [Executive Report (PDF)](https://github.com/PeterOzo/Real-Time-Pricing-Optimization-for-Auto-Loans/blob/main/README_Paper_on_Real_Time_Pricing_Optimization_for_Auto_Loans.pdf) :contentReference[oaicite:10]{index=10}.*
+
 ![image](https://github.com/user-attachments/assets/78534dff-7ddb-452d-887e-6591daa17512)
 
 
@@ -18,7 +20,6 @@ Click the Live Demo tab above for a visual tour of the dashboard!
 
 
 ![image](https://github.com/user-attachments/assets/7c4f1ffc-d934-4666-b992-bde7674a6787)
-
 
 Revolutionizing auto loan pricing strategies through cutting-edge machine learning and real-time competitive intelligence. Our comprehensive system integrates XGBoost risk assessment models, live market data scraping, multi-objective optimization algorithms, and production-ready deployment to maximize profitability while maintaining market competitiveness and regulatory compliance. This groundbreaking approach transforms traditional static grade-based pricing into dynamic, data-driven decision making that adapts to market conditions in real-time.
 
