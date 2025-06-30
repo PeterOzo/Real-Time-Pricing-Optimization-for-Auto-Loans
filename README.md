@@ -341,7 +341,7 @@ This project is released under the **MIT License**. See [LICENSE](LICENSE) for d
 
 ---
 
-*For full details, see the [Executive Report (PDF)](ACA_Pricing_Optimization_Dashboard_Report_latest.pdf) :contentReference[oaicite:10]{index=10}.*  
+*For full details, see the [Executive Report (PDF)](https://github.com/PeterOzo/Real-Time-Pricing-Optimization-for-Auto-Loans/blob/main/README_Paper_on_Real_Time_Pricing_Optimization_for_Auto_Loans.pdf) :contentReference[oaicite:10]{index=10}.*  
 
 
 
