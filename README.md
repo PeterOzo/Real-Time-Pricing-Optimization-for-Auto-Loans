@@ -277,3 +277,96 @@ def comprehensive_data_cleaning(loan_data):
     loan_data['grade_numeric'] = loan_data['grade'].map(grade_map)
     
     return loan_data
+
+
+---
+
+## 🏗 Technical Architecture
+
+### Technology Stack  
+- **Frontend:** Streamlit (Python)  
+- **Backend:** pandas, NumPy, XGBoost  
+- **Visualization:** Plotly  
+- **Data Sources:** Bankrate, Yahoo Finance, FRED, custom scrapers  
+- **Deployment:** Streamlit Cloud, automated caching & error handling  
+
+### Microservices & Data Pipeline  
+1. **Real-Time Ingestion:** 5-minute refresh cycles with validation  
+2. **Feature Store:** Engineered borrower & market features cached at multiple TTL levels  
+3. **Model Inference:** XGBoost risk scorer → probability of default  
+4. **Optimization Engine:** Multi-objective solver returns APR  
+5. **Dashboard API:** RESTful endpoints, audit logging, fair-lending monitoring
+
+---
+
+## 🤖 Machine Learning & Pricing Algorithm
+
+### XGBoost Risk Model  
+- **Objective:** Predict default probability (binary classification)  
+- **Data:** 250 K LendingClub loans (2007–2020), 185 engineered features  
+- **Key Features:** DTI, income ratios, credit grade, macro indicators  
+- **Training:** SMOTE for imbalance, Bayesian hyperparameter tuning, time-series CV  
+- **Performance:** 73.47 % AUC vs. 62.53 % logistic baseline :contentReference[oaicite:8]{index=8}  
+
+### Multi-Objective Optimization  
+\[
+r^* = \arg\max_{r}\bigl[
+  \alpha\,\mathrm{Profit}(r)
+  + \beta\,\mathrm{Competition}(r)
+  - \gamma\,\mathrm{Risk}(r)
+\bigr]
+\]  
+- **Profit:** \(rLT - P(D|X)\,L\,\mathrm{LGD} - \mathrm{OpCost}\)  
+- **Competition:** Penalty for deviation from target market percentile  
+- **Risk:** Penalty scaling with DTI, income shortfall, loan size  
+- **Modes:** standard, competitive (cap at market+0.5 %), profit-optimized (+0.5 %)  
+
+---
+
+## 📊 Data Analysis & Insights
+
+### Exploratory Findings  
+- **Risk Tiers:** 7-level risk segmentation with non-linear DTI effects  
+- **Market Patterns:** 60 % of competitor APRs in 9–11 % range; volatility 3-5 changes/week  
+- **Customer Segments:**  
+  - Prime (40 %): low DTI, high income  
+  - Near-Prime (35 %): optimization potential  
+  - Subprime (25 %): premium pricing  
+
+### A/B & Monitoring  
+- **Champion/Challenger framework** with 95 % confidence  
+- **Drift Detection:** Feature & prediction drift tests  
+- **Bias Analysis:** Demographic fairness for regulatory compliance :contentReference[oaicite:9]{index=9}
+
+---
+
+## 🚀 Deployment & MLOps
+
+### Pipeline  
+1. **Automated Retraining:** Drift triggers → model retrain  
+2. **Validation:** A/B testing with power analysis  
+3. **Blue-Green Deployment:** Zero-downtime releases, rollback capability  
+4. **Monitoring:** Real-time AUC dashboards, latency & health alerts  
+
+### Production Architecture  
+- **Auto-Scaling** for up to 150+ req/s  
+- **Caching Strategy:** Intelligent TTL for freshness vs. performance  
+- **Security & Compliance:** CORS protection, input validation, audit logs
+
+---
+
+## 💡 Innovation & Contributions
+
+- **Dynamic Pricing Algorithm:** Real-time competitor integration with ML risk scoring  
+- **Ensemble Architecture:** Gradient boosting + live market features  
+- **Responsible AI:** SHAP interpretability, demographic fairness tests  
+- **Scalable Design:** Modular microservices, sub-millisecond responses
+
+---
+
+## 📜 License  
+This project is released under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
+
+*For full details, see the [Executive Report (PDF)](ACA_Pricing_Optimization_Dashboard_Report_latest.pdf) :contentReference[oaicite:10]{index=10}.*  
