@@ -9,7 +9,7 @@
 [![System Health](https://img.shields.io/badge/System%20Health-100%25-brightgreen.svg)](/)
 [![Response Time](https://img.shields.io/badge/Response%20Time-0.83ms-blue.svg)](/)
 
-Take a visual tour of the dashboard here: https://aca-pricing-optimization-dashboard-tmcdvlrjildupmaracljvv.streamlit.app/
+Click the Live Demo tab above for a visual tour of the dashboard!
 
 ![image](https://github.com/user-attachments/assets/78534dff-7ddb-452d-887e-6591daa17512)
 
