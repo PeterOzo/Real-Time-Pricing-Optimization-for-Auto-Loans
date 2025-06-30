@@ -9,6 +9,17 @@
 [![System Health](https://img.shields.io/badge/System%20Health-100%25-brightgreen.svg)](/)
 [![Response Time](https://img.shields.io/badge/Response%20Time-0.83ms-blue.svg)](/)
 
+Take a visual tour of the dashboard here: https://aca-pricing-optimization-dashboard-tmcdvlrjildupmaracljvv.streamlit.app/
+
+![image](https://github.com/user-attachments/assets/78534dff-7ddb-452d-887e-6591daa17512)
+
+
+![image](https://github.com/user-attachments/assets/58673253-0dc8-4594-b4b2-c4f8c8aae8de)
+
+
+![image](https://github.com/user-attachments/assets/7c4f1ffc-d934-4666-b992-bde7674a6787)
+
+
 Revolutionizing auto loan pricing strategies through cutting-edge machine learning and real-time competitive intelligence. Our comprehensive system integrates XGBoost risk assessment models, live market data scraping, multi-objective optimization algorithms, and production-ready deployment to maximize profitability while maintaining market competitiveness and regulatory compliance. This groundbreaking approach transforms traditional static grade-based pricing into dynamic, data-driven decision making that adapts to market conditions in real-time.
 
 ## 🎯 Business Question
