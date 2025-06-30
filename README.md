@@ -303,15 +303,6 @@ $$r^* = \arg\max_{r} \left[ \alpha \cdot \mathrm{Profit}(r) + \beta \cdot \mathr
 
 ---
 
-**Alternative Formulation (Constrained Optimization):**
-
-$$\begin{align}
-r^* = \arg\max_{r} &\quad \mathrm{Profit}(r) \\
-\text{subject to:} &\quad \mathrm{Competition}(r) \leq C_{\max} \\
-&\quad \mathrm{Risk}(r) \leq R_{\max}
-\end{align}$$
----
-
 ## 📊 Data Analysis & Insights
 
 ### Exploratory Findings  
