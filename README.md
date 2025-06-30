@@ -282,18 +282,34 @@ Our pricing optimization engine addresses these challenges through:
 - **Performance:** 73.47 % AUC vs. 62.53 % logistic baseline :contentReference[oaicite:8]{index=8}  
 
 ### Multi-Objective Optimization  
-\[
-r^* = \arg\max_{r}\bigl[
-  \alpha\,\mathrm{Profit}(r)
-  + \beta\,\mathrm{Competition}(r)
-  - \gamma\,\mathrm{Risk}(r)
-\bigr]
-\]  
-- **Profit:** \(rLT - P(D|X)\,L\,\mathrm{LGD} - \mathrm{OpCost}\)  
-- **Competition:** Penalty for deviation from target market percentile  
-- **Risk:** Penalty scaling with DTI, income shortfall, loan size  
-- **Modes:** standard, competitive (cap at market+0.5 %), profit-optimized (+0.5 %)  
 
+$$r^* = \arg\max_{r} \left[ \alpha \cdot \mathrm{Profit}(r) + \beta \cdot \mathrm{Competition}(r) + \gamma \cdot \mathrm{Risk}(r) \right]$$
+
+**Objective Components:**
+
+• **α**: Weight for profit objective  
+• **β**: Weight for competition objective  
+• **γ**: Weight for risk objective
+
+**Objective Functions:**
+
+• **Profit**: $(rLT - P(D|X)L\mathrm{LGD} - \mathrm{OpCost})$
+
+• **Competition**: Penalty for deviation from target market percentile
+
+• **Risk**: Penalty scaling with DTI, income shortfall, loan size
+
+**Modes**: standard, competitive (cap at market + 0.5%), profit-optimized (+0.5%)
+
+---
+
+**Alternative Formulation (Constrained Optimization):**
+
+$$\begin{align}
+r^* = \arg\max_{r} &\quad \mathrm{Profit}(r) \\
+\text{subject to:} &\quad \mathrm{Competition}(r) \leq C_{\max} \\
+&\quad \mathrm{Risk}(r) \leq R_{\max}
+\end{align}$$
 ---
 
 ## 📊 Data Analysis & Insights
