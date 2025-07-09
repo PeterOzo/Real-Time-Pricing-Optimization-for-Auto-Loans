@@ -11,7 +11,7 @@
 
 Click the Live Demo tab above for a visual tour of the dashboard!
 
-For full details, see the [Executive Report (PDF)](https://github.com/PeterOzo/Real-Time-Pricing-Optimization-for-Auto-Loans/blob/main/README_Paper_on_Real_Time_Pricing_Optimization_for_Auto_Loans.pdf) 
+For full details, see the [Executive Report (PDF)](https://github.com/PeterOzo/Real-Time-Pricing-Optimization-for-Auto- Loans/blob/main/README_Paper_on_Real_Time_Pricing_Optimization_for_Auto_Loans.pdf) 
 
 ![image](https://github.com/user-attachments/assets/78534dff-7ddb-452d-887e-6591daa17512)
 
