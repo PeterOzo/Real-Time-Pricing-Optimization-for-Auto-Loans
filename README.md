@@ -1,4 +1,4 @@
-# Real-Time Pricing Optimization for Auto Loans: A Machine Learning Approach with Competitive Intelligence Integration 
+# Real-Time Pricing Optimization for Auto Loans: A Machine Learning Approach with Competitive Intelligence Integration  
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-brightgreen)](https://aca-pricing-optimization-dashboard-tmcdvlrjildupmaracljvv.streamlit.app/)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
